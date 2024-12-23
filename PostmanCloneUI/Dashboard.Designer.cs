@@ -69,9 +69,9 @@
             // 
             apiText.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             apiText.BorderStyle = BorderStyle.FixedSingle;
-            apiText.Location = new Point(394, 170);
+            apiText.Location = new Point(419, 170);
             apiText.Name = "apiText";
-            apiText.Size = new Size(1068, 71);
+            apiText.Size = new Size(1043, 71);
             apiText.TabIndex = 2;
             // 
             // bodyText
@@ -124,15 +124,15 @@
             httpVerbSelection.DropDownStyle = ComboBoxStyle.DropDownList;
             httpVerbSelection.FlatStyle = FlatStyle.Popup;
             httpVerbSelection.FormattingEnabled = true;
-            httpVerbSelection.Items.AddRange(new object[] { "GET", "POST" });
+            httpVerbSelection.Items.AddRange(new object[] { "GET", "POST", "PUT", "PATCH", "DELETE" });
             httpVerbSelection.Location = new Point(157, 170);
             httpVerbSelection.Name = "httpVerbSelection";
-            httpVerbSelection.Size = new Size(209, 70);
+            httpVerbSelection.Size = new Size(240, 70);
             httpVerbSelection.TabIndex = 7;
-
             // 
             // callData
             // 
+            callData.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             callData.Controls.Add(bodyTab);
             callData.Controls.Add(resultsTab);
             callData.Location = new Point(33, 307);
@@ -140,8 +140,6 @@
             callData.SelectedIndex = 0;
             callData.Size = new Size(1579, 621);
             callData.TabIndex = 8;
-            // callData
-            callData.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             // 
             // bodyTab
             // 
@@ -157,10 +155,10 @@
             // resultsTab
             // 
             resultsTab.Controls.Add(resultsText);
-            resultsTab.Location = new Point(8, 76);
+            resultsTab.Location = new Point(8, 46);
             resultsTab.Name = "resultsTab";
             resultsTab.Padding = new Padding(3);
-            resultsTab.Size = new Size(1563, 537);
+            resultsTab.Size = new Size(1563, 567);
             resultsTab.TabIndex = 1;
             resultsTab.Text = "Results";
             resultsTab.UseVisualStyleBackColor = true;
@@ -175,7 +173,7 @@
             resultsText.Name = "resultsText";
             resultsText.ReadOnly = true;
             resultsText.ScrollBars = ScrollBars.Both;
-            resultsText.Size = new Size(1557, 531);
+            resultsText.Size = new Size(1557, 561);
             resultsText.TabIndex = 4;
             // 
             // Dashboard
